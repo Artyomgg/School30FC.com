@@ -1,0 +1,105 @@
+.DBR{
+    text-align: center;
+}
+
+.wr{
+    margin-top: 40px;
+}
+
+.wr h2{
+    color: #3c5e2c  ;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+.block_img img{
+    border: 2px solid blue;
+    width: 250px;
+}
+
+.block_img{
+    display: flex;
+    justify-content: center;
+}
+
+.bl{
+    margin-top: 20px;
+    border: 3px solid goldenrod;
+    background: burlywood;
+    border-radius: 5px;
+    color: darkblue;
+    font-size: 20px;
+}
+
+.bl2{
+    color: darkblue;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 3px solid goldenrod;
+    background: burlywood;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.p2{
+    margin-top: 20px;
+    border: 3px solid goldenrod;
+    background: burlywood;
+    border-radius: 5px;
+    color: darkblue;
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.p3{
+    margin-top: 20px;
+    border: 3px solid goldenrod;
+    background: burlywood;
+    border-radius: 5px;
+    color: darkblue;
+    font-size: 20px;
+}
+
+
+.block_imGG img{
+    width: 250px;
+}
+
+.block_imGG{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.p_4-3-3{
+    margin-top: 20px;
+    border: 3px solid goldenrod;
+    background: burlywood;
+    border-radius: 5px;
+    color: darkblue;
+    font-size: 20px;
+    padding: 2px;
+}
+
+
+.p_2_4-3-3{
+    margin-top: 20px;
+    border: 3px solid goldenrod;
+    background: burlywood;
+    border-radius: 5px;
+    color: darkblue;
+    font-size: 20px;
+    padding: 2px;
+}
+
+.p_3_4-3-3{
+    margin-top: 20px;
+    border: 3px solid goldenrod;
+    background: burlywood;
+    border-radius: 5px;
+    color: darkblue;
+    font-size: 20px;
+    padding: 2px;
+}

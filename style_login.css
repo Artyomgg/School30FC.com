@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(20px);
+    z-index: 100;
+    -webkit-animation: fade .6s;
+    -moz-animation: fade .6s;
+    animation: fade .6s;
+    overflow: auto;
+}
+
+.popup{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+    width: 420px;
+    background: purple;
+    color: #ffffff;
+    font-family: "Popins", sans-serif;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.wrapper h1{
+    font-size: 36px;
+    text-align: center;
+}
+
+.wrapper .input-box{
+    width: calc(100%-10px);
+    height: 50px;
+    margin: 30px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    border: 2px solid rgb(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 15px;
+    color: #fff;
+    padding-left: 10px;
+}
+
+.log-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    border: 2px solid rgb(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 15px;
+    color: #fff;
+    padding-left: 10px;
+}
+
+.log-box{
+    height: 50px;
+    margin: 30px 5px;
+}
+.log-box input::placeholder{
+    color: #fff;  
+}
+
+.input-box input::placeholder{
+    color: #fff;    
+}
+.input-box i{
+    position: absolute;
+    z-index: 2;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.wrapper .remember{
+    text-align: center;
+    font-size: 15.5px;
+    margin: 0 5px 0 5px;
+}
+
+.remember label input{
+    accent-color:#fff;
+}
+
+.remember a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.remember a:hover{
+    text-decoration: underline;
+}
+
+.wrapper .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: sienna;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.cross{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    font-size: 30px;
+}
+
+#overlayB{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(20px);
+    z-index: 999;
+    -webkit-animation: fade .6s;
+    -moz-animation: fade .6s;
+    animation: fade .6s;
+    overflow: auto;
+}
+
+.popupB{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapperB{
+    width: 420px;       
+    background: purple;
+    color: #ffffff;
+    font-family: "Popins", sans-serif;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.wrapperB i{
+    font-size: 40px;
+}
+
+.wrapperB a{
+    display: block;
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+    width: 100%;
+    background: white;
+    margin-top: 5px;
+}
+
+#overlayBS{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(20px);
+    z-index: 999;
+    -webkit-animation: fade .6s;
+    -moz-animation: fade .6s;
+    animation: fade .6s;
+    overflow: auto;
+}
+
+#overlayBSS{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(20px);
+    z-index: 999;
+    -webkit-animation: fade .6s;
+    -moz-animation: fade .6s;
+    animation: fade .6s;
+    overflow: auto;
+}
