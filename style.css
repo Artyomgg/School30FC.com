@@ -1,97 +1,130 @@
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
 }
 body,
-html{
-    height:100%;
+html {
+	height: 100%;
 }
 
-body{
-    background: #b6041a;
+body {
+	background: #b6041a;
+}
+.block-reclama{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
 }
 
-.h1 h1{
-    text-align: center;
-    color: green;
+.reclama {
+	position: absolute;
+	display: none;
+	top: 0;
+	left: 0;
+	z-index: 10000000000;
 }
 
-
-#one{
-    display: flex;
-    width: 300px;
-    height: 70px;
-    background-color: gray;
-    align-items: center;
-    justify-content: center;
-    color: red;
-
+.r-wrapper {
+	position: relative;
+	background: #b6041a;
+	width: 40%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-between;
+	background-position: cover;
+	padding: 10px;
 }
 
-.content1{
-    display: flex;
-    justify-content: end;
-    align-items: end;
-    margin-right: 40px;
-    flex-wrap: wrap;
+.cross-r{
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
-.conteiner1{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    margin-bottom: 20px;
+.cross-r i {
+	font-size: 30px;
 }
 
-.block-d{
-    display: flex;
-    background: green; 
-    border-radius: 30px;
-    width: 280px;
-    height: 130px;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-
-    
-}
-#two{
-    font-size: 30px;
-
+.r-wrapper img {
+	width: 70%;
 }
 
-.conteiner2{
-    display: flex;
-    align-items: center;
-    height: 100px;
+.h1 h1 {
+	text-align: center;
+	color: green;
 }
 
-.block{
-    width: 100%;
-    height: 1px;
-    background-color: blue;
-}
-.ul1{
-    color: darkblue;
-    font-size: 20px;
-}
-
-.div-btn{
-    display: flex;
-    justify-content: center;
-
+#one {
+	display: flex;
+	width: 300px;
+	height: 70px;
+	background-color: gray;
+	align-items: center;
+	justify-content: center;
+	color: red;
 }
 
-.div-btn h2{
-    background: orangered;
-    border: 2px solid black;
-    border-radius: 5px;
-    box-shadow: 2px 2px 15px 2px black;
-    cursor: pointer;
+.content1 {
+	display: flex;
+	justify-content: end;
+	align-items: end;
+	margin-right: 40px;
+	flex-wrap: wrap;
 }
 
-.ban1{
-    width: 100%;
+.conteiner1 {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	margin-bottom: 20px;
+}
+
+.block-d {
+	display: flex;
+	background: green;
+	border-radius: 30px;
+	width: 280px;
+	height: 130px;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+}
+#two {
+	font-size: 30px;
+}
+
+.conteiner2 {
+	display: flex;
+	align-items: center;
+	height: 100px;
+}
+
+.block {
+	width: 100%;
+	height: 1px;
+	background-color: blue;
+}
+.ul1 {
+	color: darkblue;
+	font-size: 20px;
+}
+
+.div-btn {
+	display: flex;
+	justify-content: center;
+}
+
+.div-btn h2 {
+	background: orangered;
+	border: 2px solid black;
+	border-radius: 5px;
+	box-shadow: 2px 2px 15px 2px black;
+	cursor: pointer;
+}
+
+.ban1 {
+	width: 100%;
 }
