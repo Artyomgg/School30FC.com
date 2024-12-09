@@ -22,7 +22,7 @@ body {
 	display: none;
 	top: 0;
 	left: 0;
-	z-index: 998;
+	z-index: 100000000;
 }
 
 .r-wrapper {
