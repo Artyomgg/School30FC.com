@@ -69,7 +69,36 @@
     background: burlywood;
     border-radius: 5px;
     font-size: 20px;
+    background-size: 300% 300%;
+  background-image: linear-gradient(-45deg, yellow 0%, orange 25%, white 51%, green 100%);
+  -webkit-animation: AnimateBG 20s ease infinite;
+          animation: AnimateBG 20s ease infinite;
 }
+
+@-webkit-keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 
 .p2{
     margin-top: 20px;
@@ -80,7 +109,36 @@
     font-size: 20px;
     display: flex;
     flex-wrap: wrap;
+    background-size: 300% 300%;
+  background-image: linear-gradient(-45deg, yellow 0%, orange 25%, pink 51%, skyblue 100%);
+  -webkit-animation: AnimateBG 20s ease infinite;
+          animation: AnimateBG 20s ease infinite;
 }
+
+@-webkit-keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 
 .p3{
     margin-top: 20px;
@@ -89,7 +147,36 @@
     border-radius: 5px;
     color: darkblue;
     font-size: 20px;
+    background-size: 300% 300%;
+  background-image: linear-gradient(-45deg, yellow 0%, blueviolet 25%, white 51%, green 100%);
+  -webkit-animation: AnimateBG 20s ease infinite;
+          animation: AnimateBG 20s ease infinite;
 }
+
+@-webkit-keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 
 
 .block_imGG img{
@@ -110,7 +197,36 @@
     color: darkblue;
     font-size: 20px;
     padding: 2px;
+    background-size: 300% 300%;
+  background-image: linear-gradient(-45deg, blueviolet 0%, orange 25%, white 51%, yellow 100%);
+  -webkit-animation: AnimateBG 20s ease infinite;
+          animation: AnimateBG 20s ease infinite;
 }
+
+@-webkit-keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 
 
 .p_2_4-3-3{
@@ -121,7 +237,36 @@
     color: darkblue;
     font-size: 20px;
     padding: 2px;
+    background-size: 300% 300%;
+  background-image: linear-gradient(-45deg, black 0%, orange 25%, white 51%, green 100%);
+  -webkit-animation: AnimateBG 20s ease infinite;
+          animation: AnimateBG 20s ease infinite;
 }
+
+@-webkit-keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 
 .p_3_4-3-3{
     margin-top: 20px;
@@ -131,4 +276,33 @@
     color: darkblue;
     font-size: 20px;
     padding: 2px;
+    background-size: 300% 300%;
+  background-image: linear-gradient(-45deg, gold 0%, goldenrod 25%, white 51%, green 100%);
+  -webkit-animation: AnimateBG 20s ease infinite;
+          animation: AnimateBG 20s ease infinite;
 }
+
+@-webkit-keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+

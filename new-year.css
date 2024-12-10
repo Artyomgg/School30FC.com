@@ -130,6 +130,7 @@
 
 .giff img {
 	width: 200px;
+	transition: 1s;
 }
 
 .snowflake {
@@ -249,4 +250,8 @@
 	left: 90%;
 	-webkit-animation-delay: 3s, 1.5s;
 	animation-delay: 3s, 1.5s;
+}
+
+.giff img:hover{
+	transform: scale(1.2);
 }

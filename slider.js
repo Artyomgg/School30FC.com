@@ -2,19 +2,10 @@ const slider = document.querySelector('.slider');
 const sliderImages = document.querySelectorAll('.slider__img');
 const sliderLine = document.querySelector('.slider__line');
 
-const sliderBtnNext = document.querySelector('.slider__btn-next');
-const sliderBtnPrev = document.querySelector('.slider__btn-prev');
+
         
 let sliderCount = 0;
 let sliderWidth = slider.offsetWidth;
-
-
-
-// Перемотка слайдера вперед по нажатию на кнопку NEXT
-sliderBtnNext.addEventListener('click', nextSlide);
-
-// Перемотка слайдера назад по нажатию на кнопку PREV
-sliderBtnPrev.addEventListener('click', prevSlide);
 
 
 // Функции

@@ -6,6 +6,8 @@ function blockN() {
 function blockD() {
 	let delay_popup = document.getElementById('overlay')
 	delay_popup.style.display = 'block'
+	const admin = document.querySelector('.im')
+	admin.style.display = 'none'
 }
 
 function hello() {
@@ -14,7 +16,9 @@ function hello() {
 
 	if (login == 'Admin' && password == '2012') {
 		blockN()
-		alert('Привет! ')
+		alert('Привет! Admin')
+		const admin = document.querySelector('.im')
+		admin.style.display = 'none'
 	} else {
 		blockD()
 		alert('Incorrect login or pasword!!!!!')
@@ -55,11 +59,23 @@ let preloader = document.querySelector('.preloader')
 
 window.addEventListener(
 	'load',
-	function() {
+	function () {
 		preloader.classList.add('hide')
-		this.setTimeout(function() {
+		this.setTimeout(function () {
 			preloader.remove()
 		})
 	},
 	1000
 )
+
+const crosBurger = document.querySelector('.crossburger i')
+const headerR = document.querySelector('.header-right')
+const headerImg = document.querySelector('.b')
+
+crosBurger.addEventListener('click', function (params) {
+	headerR.style.display = 'none'
+})
+
+headerImg.addEventListener('click', function () {
+	headerR.style.display = 'block'
+})
