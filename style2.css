@@ -37,41 +37,45 @@
 	margin-bottom: 10px;
 	flex-wrap: wrap;
 	background-size: 300% 300%;
-  background-image: linear-gradient(-45deg, yellow 0%, purple 25%, green 51%, gold 100%);
-  -webkit-animation: AnimateBG 20s ease infinite;
-          animation: AnimateBG 20s ease infinite;
+	background-image: linear-gradient(
+		-45deg,
+		yellow 0%,
+		purple 25%,
+		green 51%,
+		gold 100%
+	);
+	-webkit-animation: AnimateBG 20s ease infinite;
+	animation: AnimateBG 20s ease infinite;
 	transition: 1s;
 }
 
-.block-text:hover{
+.block-text:hover {
 	color: beige;
-	
 }
 
 @-webkit-keyframes AnimateBG {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 @keyframes AnimateBG {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
-
 
 .block2 > h2 {
 	font-size: 30px;
@@ -106,39 +110,44 @@
 	margin-bottom: 10px;
 	flex-wrap: wrap;
 	background-size: 300% 300%;
-  background-image: linear-gradient(-45deg, yellow 0%, orange 25%, white 51%, green 100%);
-  -webkit-animation: AnimateBG 20s ease infinite;
-          animation: AnimateBG 20s ease infinite;
+	background-image: linear-gradient(
+		-45deg,
+		yellow 0%,
+		orange 25%,
+		white 51%,
+		green 100%
+	);
+	-webkit-animation: AnimateBG 20s ease infinite;
+	animation: AnimateBG 20s ease infinite;
 	transition: 1s;
 }
 
-.block-text2:hover{
+.block-text2:hover {
 	color: beige;
-	
 }
 
 @-webkit-keyframes AnimateBG {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 @keyframes AnimateBG {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 .text2 > img {

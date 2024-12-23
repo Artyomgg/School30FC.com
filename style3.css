@@ -1,308 +1,341 @@
-.DBR{
-    text-align: center;
+.DBR {
+	text-align: center;
 }
 
-.wr{
-    margin-top: 40px;
+.wr {
+	margin-top: 40px;
 }
 
-.wr h2{
-    color: #3c5e2c  ;
-    margin-bottom: 20px;
-    margin-top: 10px;
-    text-align: center;
+.wr h2 {
+	color: #3c5e2c;
+	margin-bottom: 20px;
+	margin-top: 10px;
+	text-align: center;
 }
-.block_img img{
-    border: 2px solid blue;
-    width: 250px;
-}
-
-.block_img{
-    display: flex;
-    justify-content: center;
+.block_img img {
+	border: 2px solid blue;
+	width: 250px;
 }
 
-.bl{
-    margin-top: 20px;
-    border: 3px solid goldenrod;
-    background: burlywood;
-    border-radius: 5px;
-    color: darkblue;
-    font-size: 20px;
-    background-size: 300% 300%;
-  background-image: linear-gradient(-45deg, yellow 0%, yellow 25%, yellow 51%, #ff357f 100%);
-  -webkit-animation: AnimateBG 20s ease infinite;
-          animation: AnimateBG 20s ease infinite;
+.block_img {
+	display: flex;
+	justify-content: center;
 }
 
-@-webkit-keyframes AnimateBG {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@keyframes AnimateBG {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-
-.bl2{
-    color: darkblue;
-    margin-top: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    border: 3px solid goldenrod;
-    background: burlywood;
-    border-radius: 5px;
-    font-size: 20px;
-    background-size: 300% 300%;
-  background-image: linear-gradient(-45deg, yellow 0%, orange 25%, white 51%, green 100%);
-  -webkit-animation: AnimateBG 20s ease infinite;
-          animation: AnimateBG 20s ease infinite;
+.bl {
+	margin-top: 20px;
+	border: 3px solid goldenrod;
+	background: burlywood;
+	border-radius: 5px;
+	color: darkblue;
+	font-size: 20px;
+	background-size: 300% 300%;
+	background-image: linear-gradient(
+		-45deg,
+		yellow 0%,
+		yellow 25%,
+		yellow 51%,
+		#ff357f 100%
+	);
+	-webkit-animation: AnimateBG 20s ease infinite;
+	animation: AnimateBG 20s ease infinite;
 }
 
 @-webkit-keyframes AnimateBG {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 @keyframes AnimateBG {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
-
-.p2{
-    margin-top: 20px;
-    border: 3px solid goldenrod;
-    background: burlywood;
-    border-radius: 5px;
-    color: darkblue;
-    font-size: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    background-size: 300% 300%;
-  background-image: linear-gradient(-45deg, yellow 0%, orange 25%, pink 51%, skyblue 100%);
-  -webkit-animation: AnimateBG 20s ease infinite;
-          animation: AnimateBG 20s ease infinite;
+.bl2 {
+	color: darkblue;
+	margin-top: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	border: 3px solid goldenrod;
+	background: burlywood;
+	border-radius: 5px;
+	font-size: 20px;
+	background-size: 300% 300%;
+	background-image: linear-gradient(
+		-45deg,
+		yellow 0%,
+		orange 25%,
+		white 51%,
+		green 100%
+	);
+	-webkit-animation: AnimateBG 20s ease infinite;
+	animation: AnimateBG 20s ease infinite;
 }
 
 @-webkit-keyframes AnimateBG {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 @keyframes AnimateBG {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
-
-.p3{
-    margin-top: 20px;
-    border: 3px solid goldenrod;
-    background: burlywood;
-    border-radius: 5px;
-    color: darkblue;
-    font-size: 20px;
-    background-size: 300% 300%;
-  background-image: linear-gradient(-45deg, yellow 0%, blueviolet 25%, white 51%, green 100%);
-  -webkit-animation: AnimateBG 20s ease infinite;
-          animation: AnimateBG 20s ease infinite;
+.p2 {
+	margin-top: 20px;
+	border: 3px solid goldenrod;
+	background: burlywood;
+	border-radius: 5px;
+	color: darkblue;
+	font-size: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	background-size: 300% 300%;
+	background-image: linear-gradient(
+		-45deg,
+		yellow 0%,
+		orange 25%,
+		pink 51%,
+		skyblue 100%
+	);
+	-webkit-animation: AnimateBG 20s ease infinite;
+	animation: AnimateBG 20s ease infinite;
 }
 
 @-webkit-keyframes AnimateBG {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 @keyframes AnimateBG {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
-
-
-.block_imGG img{
-    width: 250px;
-}
-
-.block_imGG{
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-}
-
-.p_4-3-3{
-    margin-top: 20px;
-    border: 3px solid goldenrod;
-    background: burlywood;
-    border-radius: 5px;
-    color: darkblue;
-    font-size: 20px;
-    padding: 2px;
-    background-size: 300% 300%;
-  background-image: linear-gradient(-45deg, blueviolet 0%, orange 25%, white 51%, yellow 100%);
-  -webkit-animation: AnimateBG 20s ease infinite;
-          animation: AnimateBG 20s ease infinite;
+.p3 {
+	margin-top: 20px;
+	border: 3px solid goldenrod;
+	background: burlywood;
+	border-radius: 5px;
+	color: darkblue;
+	font-size: 20px;
+	background-size: 300% 300%;
+	background-image: linear-gradient(
+		-45deg,
+		yellow 0%,
+		blueviolet 25%,
+		white 51%,
+		green 100%
+	);
+	-webkit-animation: AnimateBG 20s ease infinite;
+	animation: AnimateBG 20s ease infinite;
 }
 
 @-webkit-keyframes AnimateBG {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 @keyframes AnimateBG {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
+.block_imGG img {
+	width: 250px;
+}
 
+.block_imGG {
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+}
 
-.p_2_4-3-3{
-    margin-top: 20px;
-    border: 3px solid goldenrod;
-    background: burlywood;
-    border-radius: 5px;
-    color: darkblue;
-    font-size: 20px;
-    padding: 2px;
-    background-size: 300% 300%;
-  background-image: linear-gradient(-45deg, black 0%, orange 25%, white 51%, green 100%);
-  -webkit-animation: AnimateBG 20s ease infinite;
-          animation: AnimateBG 20s ease infinite;
+.p_4-3-3 {
+	margin-top: 20px;
+	border: 3px solid goldenrod;
+	background: burlywood;
+	border-radius: 5px;
+	color: darkblue;
+	font-size: 20px;
+	padding: 2px;
+	background-size: 300% 300%;
+	background-image: linear-gradient(
+		-45deg,
+		blueviolet 0%,
+		orange 25%,
+		white 51%,
+		yellow 100%
+	);
+	-webkit-animation: AnimateBG 20s ease infinite;
+	animation: AnimateBG 20s ease infinite;
 }
 
 @-webkit-keyframes AnimateBG {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 @keyframes AnimateBG {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
-
-.p_3_4-3-3{
-    margin-top: 20px;
-    border: 3px solid goldenrod;
-    background: burlywood;
-    border-radius: 5px;
-    color: darkblue;
-    font-size: 20px;
-    padding: 2px;
-    background-size: 300% 300%;
-  background-image: linear-gradient(-45deg, gold 0%, goldenrod 25%, white 51%, green 100%);
-  -webkit-animation: AnimateBG 20s ease infinite;
-          animation: AnimateBG 20s ease infinite;
+.p_2_4-3-3 {
+	margin-top: 20px;
+	border: 3px solid goldenrod;
+	background: burlywood;
+	border-radius: 5px;
+	color: darkblue;
+	font-size: 20px;
+	padding: 2px;
+	background-size: 300% 300%;
+	background-image: linear-gradient(
+		-45deg,
+		black 0%,
+		orange 25%,
+		white 51%,
+		green 100%
+	);
+	-webkit-animation: AnimateBG 20s ease infinite;
+	animation: AnimateBG 20s ease infinite;
 }
 
 @-webkit-keyframes AnimateBG {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 @keyframes AnimateBG {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
+.p_3_4-3-3 {
+	margin-top: 20px;
+	border: 3px solid goldenrod;
+	background: burlywood;
+	border-radius: 5px;
+	color: darkblue;
+	font-size: 20px;
+	padding: 2px;
+	background-size: 300% 300%;
+	background-image: linear-gradient(
+		-45deg,
+		gold 0%,
+		goldenrod 25%,
+		white 51%,
+		green 100%
+	);
+	-webkit-animation: AnimateBG 20s ease infinite;
+	animation: AnimateBG 20s ease infinite;
+}
+
+@-webkit-keyframes AnimateBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes AnimateBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}

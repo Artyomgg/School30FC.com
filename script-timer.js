@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
 	// конечная дата, например 1 июля 2021
 	const deadline = new Date(2025, 0)
 	// id таймера
@@ -30,12 +30,12 @@ document.addEventListener('DOMContentLoaded', function() {
 		$minutes.dataset.title = declensionNum(minutes, [
 			'минута',
 			'минуты',
-			'минут'
+			'минут',
 		])
 		$seconds.dataset.title = declensionNum(seconds, [
 			'секунда',
 			'секунды',
-			'секунд'
+			'секунд',
 		])
 	}
 	// получаем элементы, содержащие компоненты даты

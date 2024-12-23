@@ -43,7 +43,7 @@
 .garland_4 {
 	background-position: 0 -108px;
 }
- .timer {
+.timer {
 	background: url(img/istockphoto-1735148159-612x612.jpg) no-repeat;
 	background-position: top;
 	display: flex;
@@ -252,6 +252,6 @@
 	animation-delay: 3s, 1.5s;
 }
 
-.giff img:hover{
+.giff img:hover {
 	transform: scale(1.2);
 }

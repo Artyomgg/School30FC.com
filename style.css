@@ -11,7 +11,7 @@ html {
 body {
 	background: #b6041a;
 }
-.block-reclama{
+.block-reclama {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
@@ -37,10 +37,10 @@ body {
 	padding: 10px;
 }
 
-.cross-r{
-    position: absolute;
-    right: 0;
-    top: 0;
+.cross-r {
+	position: absolute;
+	right: 0;
+	top: 0;
 }
 
 .cross-r i {
