@@ -163,3 +163,28 @@
 .conteiner3-1 {
 	margin-bottom: 100px;
 }
+
+.big-football{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	flex-wrap: wrap;
+	font-size: 20px;
+}
+.block-big-fotball{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 5px;
+	background: #ba947e;
+	gap: 20px;
+	
+}
+
+.block-big-fotball h2{
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 15px;
+}
