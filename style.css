@@ -11,48 +11,8 @@ html {
 body {
 	background: #b6041a;
 }
-.block-reclama {
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-}
-
-.reclama {
-	position: absolute;
-	display: none;
-	top: 0;
-	left: 0;
-	z-index: 100000000;
-}
-
-.r-wrapper {
-	position: relative;
-	background: #b6041a;
-	width: 40%;
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	justify-content: space-between;
-	background-position: cover;
-	padding: 10px;
-}
-
-.cross-r {
-	position: absolute;
-	right: 0;
-	top: 0;
-}
-
-.cross-r i {
-	font-size: 30px;
-}
-
-.r-wrapper img {
-	width: 70%;
-}
 
 .h1 h1 {
-	text-align: center;
 	color: green;
 }
 

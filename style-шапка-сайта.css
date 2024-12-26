@@ -23,14 +23,16 @@
 }
 
 /* Стиль ссылки логотипа */
-.header a.logo {
+.header .logo {
 	display: flex;
-	justify-content: end;
+	justify-content: center;
+	transition: 0.5s linear;
+	padding: 7px;
 }
 
-.header a:hover {
-	background-color: #ddd;
-	color: black;
+.header .logo:hover{
+	background: rgba(255, 255, 255, 0.596);
+
 }
 
 /* Изменение цвета фона при наведении курсора */
