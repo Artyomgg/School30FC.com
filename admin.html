@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Админ-панель</title>
+		<link rel="icon" type="image/gif" href="img/1.png">
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="style-шапка-сайта.css" />
+		<link rel="stylesheet" href="new-year.css" />
+		<link rel="stylesheet" href="style_login.css" />
+		<link rel="stylesheet" href="loader.css">
+		<link rel="stylesheet" href="admin-styles.css">
+		<link
+			href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div class="preloader">
+			<img src="svg-loaders/audio.svg" alt="">
+		</div>
+		<div class="hamburger-menu">
+			<input id="menu__toggle" type="checkbox" />
+			<label class="menu__btn" for="menu__toggle">
+				<span></span>
+			</label>
+
+			<ul class="menu__box">
+				<li><a class="menu__item" href="index.html">Главная</a></li>
+				<li><a class="menu__item" href="#" onclick="str()">Состав</a></li>
+				<li><a class="menu__item" href="#" onclick="str1()">Схемы</a></li>
+				<li><a class="menu__item active admin" href="admin.html">Админ панель</a></li>
+				<li><a class="menu__item" href="#" class="active" onclick='str2()'>Новости</a></li>
+				<li><a class="menu__item" href="info.html" class="active">О нас</a></li>
+				<li>
+					<div class="block-in-li">
+						<img src="img/1.jpg" alt="" class="im" onclick="blockD()" />
+					</div>
+				</li>
+			</ul>
+		</div>
+		
+
+		
+
+		<div class="profile">
+			<div class="block-set-img"></div>
+		</div>
+		<div class="admin-block">
+			<h1>
+				Админ-панель
+			</h1>
+		</div>
+		<div class="block-leave">
+			<div class="block-l">Выйти з аккаунта админа</div>
+		</div>
+		
+
+		<section id="passwords">
+			<h1>Пароли</h1>
+			<div class="doc-pass">
+				<p>Пароль от всего : 2012</p>
+			</div>
+		</section>
+
+
+		<div id="overlay">
+        
+			<div class="popup">
+					<div class="wrapper">
+							<div class="cross">
+									<i class='bx bx-x-circle' onclick="blockN()"></i>
+							</div>
+							<form action="">
+									<h1>Войти</h1>
+									
+									<div class="log-box">
+											<input type="text" placeholder="Имя" required id="Login">
+									</div>
+									<div class="input-box">
+											<input type="password" placeholder="Пароль" required id="password">
+											<i class='bx bxs-lock-alt'></i>
+									</div>
+									<div class="remember">
+											<a href="">Зыбыл пароль?</a>
+									</div>
+									<div>
+											<h2 class="btn" onclick="hello()">Login<h2></h2>
+									</div>      
+									
+
+							</form>
+					</div>
+			</div>
+		</div>
+
+
+
+
+		<div id="overlayB">
+			<div class="popupB">
+				<div class="wrapperB">
+					<div class="crossB">
+						<i class="bx bx-x-circle" onclick="cl()"></i>
+					</div>
+					<form action="">
+						<a href="index2.html">Мини-футбол</a>
+						<a href="in.html">Большой футбол</a>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div id="overlayBS">
+			<div class="popupB">
+				<div class="wrapperB">
+					<div class="crossB">
+						<i class="bx bx-x-circle" onclick="cl1()"></i>
+					</div>
+					<form action="">
+						<a href="index3.html">Мини-футбол</a>
+						<a href="Big.html">Большой футбол</a>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div id="overlayBSS">
+			<div class="popupB">
+				<div class="wrapperB">
+					<div class="crossB">
+						<i class="bx bx-x-circle" onclick="cl2()"></i>
+					</div>
+					<form action="">
+						<a href="https://www.sport-express.ru/futsal/">Мини-футбол</a>
+						<a href="https://www.sport-express.ru/football/">Большой футбол</a>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<script>
+
+		</script>
+		<script src="script.js"></script>
+	</body>
+</html>

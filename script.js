@@ -3,12 +3,16 @@ function blockN() {
 	delay_popup.style.display = 'none'
 }
 
+const admin = document.querySelector('.im')
+
 function blockD() {
 	let delay_popup = document.getElementById('overlay')
 	delay_popup.style.display = 'block'
-	const admin = document.querySelector('.im')
+
 	admin.style.display = 'none'
 }
+
+let adminSTR = document.querySelector('.admin')
 
 function hello() {
 	let login = document.getElementById('Login').value
@@ -19,11 +23,45 @@ function hello() {
 		alert('Привет! Admin')
 		const admin = document.querySelector('.im')
 		admin.style.display = 'none'
+		adminSTR.style.display = 'block'
+		saveStyle()
 	} else {
 		blockD()
-		alert('Incorrect login or pasword!!!!!')
+		alert('Incorrect login or password!!!!!')
 	}
 }
+
+///Функция сохранения
+
+function saveStyle() {
+	// Получаем стиль элемента
+	const style = window.getComputedStyle(adminSTR)
+
+	const style2 = window.getComputedStyle(admin)
+
+	// Сохраняем необходимые свойства стиля в LocalStorage
+	localStorage.setItem('admin', style.display)
+	localStorage.setItem('adminDisplay', style2.display)
+}
+
+// Функция для применения стиля из LocalStorage
+function applyStyle() {
+	// Получаем сохраненные стили из LocalStorage
+	const displayCXX = localStorage.getItem('admin')
+
+	const displayCXX2 = localStorage.getItem('adminDisplay')
+
+	// Применяем сохраненные стили к элементу, если они существуют
+	adminSTR.style.display = displayCXX
+	admin.style.display = displayCXX2
+}
+
+// Вызов функций при загрузке страницы
+window.onload = function () {
+	applyStyle() // Применяем стиль
+}
+
+///Конец
 
 let pop = document.getElementById('overlayB')
 
@@ -68,14 +106,30 @@ window.addEventListener(
 	1000
 )
 
-const crosBurger = document.querySelector('.crossburger i')
-const headerR = document.querySelector('.header-right')
-const headerImg = document.querySelector('.b')
+function yes() {
+	if (al == true) {
+		window.location.href = 'index.html'
+		adminSTR.style.display = 'none'
+		admin.style.display = 'block'
+		removeStyles()
+	} else {
+		window.location.href = 'admin.html'
+	}
+}
 
-crosBurger.addEventListener('click', function (params) {
-	headerR.style.display = 'none'
-})
+///Конец
 
-headerImg.addEventListener('click', function () {
-	headerR.style.display = 'block'
+
+function removeStyles() {
+	localStorage.removeItem('admin')
+	localStorage.removeItem('adminDisplay')
+}
+
+let leave = document.querySelector('.block-l')
+
+let al
+
+leave.addEventListener('click', () => {
+	al = confirm('Вы точно хотите выйти из аккаунта?')
+	setTimeout(yes(), 1000)
 })

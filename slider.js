@@ -30,4 +30,4 @@ function rollSlider() {
 
 setInterval(() => {
 	nextSlide()
-}, 3000)
+}, 2500)

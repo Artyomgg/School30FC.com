@@ -4,6 +4,7 @@
 	color: #3c5e2c;
 	justify-content: center;
 	margin-bottom: 10px;
+	margin-top: 30px;
 }
 
 .text1 {
@@ -84,7 +85,7 @@
 	margin-bottom: 10px;
 }
 
-.block2 > h3 {
+.block2 > section > h3 {
 	font-size: 25px;
 	color: orangered;
 	text-align: center;
@@ -154,17 +155,18 @@
 	width: 400px;
 }
 
-.conteiner3-1 > h3 {
+.conteiner3-1 > section > h3 {
 	font-size: 25px;
 	color: orangered;
 	text-align: center;
 }
 
-.conteiner3-1 {
-	margin-bottom: 100px;
+.conteiner3-1{
+	margin-bottom: 10px;
 }
 
-.big-football{
+
+.big-football {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -172,7 +174,7 @@
 	flex-wrap: wrap;
 	font-size: 20px;
 }
-.block-big-fotball{
+.block-big-fotball {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -180,11 +182,100 @@
 	padding: 5px;
 	background: #ba947e;
 	gap: 20px;
-	
 }
 
-.block-big-fotball h2{
+.block-big-fotball h2 {
 	display: flex;
 	flex-wrap: wrap;
 	font-size: 15px;
 }
+
+
+.side-bar{
+	background: white;
+	border-radius: 6px;
+	border: 3px solid black;
+	width: 70%;
+	font-size: 20px;
+	padding: 10px;
+}
+
+.side-bar ol{
+	list-style: none;
+}
+
+.side-bar ol li a{
+	text-decoration: none;
+	color: black;
+}
+
+
+.block-side-bar{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.strelka{
+	background: purple;
+	width: 70px;
+	height: 70px;
+	font-size: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	transition: 2s;
+	text-decoration: none;
+	color: black;
+}
+
+
+.strelka:hover{
+	background: black;
+	color: white;
+}
+
+
+
+.razdel{
+	width: 100%;
+	background: black;
+	height: 2px;
+	margin: 4px 0px 4px 0px;
+}
+
+@media screen and (max-width:400px){
+	.strelka{
+		width: 50px;
+		height: 50px;
+	}
+	.side-bar{
+		font-size: 15px;
+	}
+}
+@media screen and (max-width:500px){
+	.side-bar{
+		font-size: 18px;
+	}
+}
+@media screen and (max-width:350px){
+	.strelka{
+		width: 30px;
+		height: 30px;
+		font-size: 30px;
+	}
+}
+@media screen and (max-width:330px){
+	.side-bar{
+		font-weight: 700;
+		font-size: 13px;
+	}
+}
+
+
+
+

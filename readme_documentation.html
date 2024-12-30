@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="stylereadme.css" />
+		<link rel="stylesheet" href="loader.css" />
+	</head>
+	<body>
+		<div class="preloader">
+			<img src="svg-loaders/audio.svg" alt="" />
+		</div>
+		<div class="block-pop-up">
+			<div class="wrapper">
+				<div class="login wrap">
+					<div class="h1">
+						Введи пороль что-бы увидеть документацию по сайту
+					</div>
+					<input
+						placeholder="Password"
+						id="password"
+						name="password"
+						type="password"
+					/>
+					<input value="Ок" class="btn-block" type="button" />
+				</div>
+			</div>
+		</div>
+		<div class="conteiner">
+			<div class="return"><</div>
+			<div class="block">
+				<h1>Документация</h1>
+			</div>
+			<p class="name">1. School30FC.com</p>
+			<p class="one">
+				2. На проекте есть пункты как: главная, составы, схемы, новости, о нас.
+				На главной есть слайдер и лучшие игроки. На составах есть составы мини
+				футбола, так и большого футбола. В схемах есть различные схемы мини
+				футбола и футбола. В новостях есть новости так-же мини футбола и
+				большого футбола. В инфрмации есть вся информация о разработчике и его
+				тех поддержки.
+			</p>
+			<div class="block-a">
+				3.
+				<a href="https://github.com/Artyomgg" target="_blank" class="a"
+					>Профиль на Git Hub: Artyomgg</a
+				>
+			</div>
+
+			<div class="btn-lisense-conteiner">
+				<button class="btn">
+					<span class="text"
+						><a href="creative-commons-zero-v1-0-universal.pdf" target="_blank"
+							>Открыть лецензию</a
+						></span
+					>
+				</button>
+			</div>
+
+			<p class="block-info-name">Сайт создан Дудко Артемом</p>
+		</div>
+		<script>
+			let pass = document.querySelector('#password'),
+				blocPopUp = document.querySelector('.block-pop-up'),
+				btn = document.querySelector('.btn-block')
+			btn.addEventListener('click', () => {
+				open()
+			})
+			function open() {
+				if (pass.value == '2012') {
+					blocPopUp.style.display = 'none'
+
+					setTimeout(saveStyle(), 1)
+				} else {
+					window.location.href = 'info.html'
+				}
+			}
+			let ret = document.querySelector('.return')
+
+			ret.addEventListener('click', () => {
+				window.location.href = 'info.html'
+			})
+
+			function saveStyle() {
+				// Получаем стиль элемента
+				const style = window.getComputedStyle(blocPopUp)
+
+				// Сохраняем необходимые свойства стиля в LocalStorage
+				localStorage.setItem('display', style.display)
+			}
+
+			// Функция для применения стиля из LocalStorage
+			function applyStyle() {
+				// Получаем сохраненные стили из LocalStorage
+				const displayN = localStorage.getItem('display')
+
+				// Применяем сохраненные стили к элементу, если они существуют
+				blocPopUp.style.display = displayN
+			}
+
+			// Вызов функций при загрузке страницы
+			window.onload = function () {
+				applyStyle() // Применяем стиль
+			}
+
+			// Функция для очистки localStorage
+			function clearLocalStorage() {
+				localStorage.clear() // Очищает все записи в localStorage
+				console.log('LocalStorage очищен в: ' + new Date())
+			}
+
+			// Проверяем, существует ли запись с датой последней очистки
+			if (!localStorage.getItem('lastClearedDate')) {
+				// Если нет, устанавливаем текущую дату
+				localStorage.setItem('lastClearedDate', new Date())
+			}
+
+			// Получаем дату последней очистки и текущую дату
+			const lastClearedDate = new Date(localStorage.getItem('lastClearedDate'))
+			const now = new Date()
+
+			// Проверяем, прошел ли месяц с последней очистки
+			if (now - lastClearedDate >= 30 * 24 * 60 * 60 * 1000) {
+				clearLocalStorage() // Очищаем localStorage
+				localStorage.setItem('lastClearedDate', now) // Обновляем дату последней очистки
+			}
+			let preloader = document.querySelector('.preloader')
+
+			window.addEventListener(
+				'load',
+				function () {
+					preloader.classList.add('hide')
+					this.setTimeout(function () {
+						preloader.remove()
+					})
+				},
+				1000
+			)
+			// Пример изменения стиля и сохранения в LocalStorage
+		</script>
+	</body>
+</html>
