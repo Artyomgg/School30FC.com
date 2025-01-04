@@ -1,10 +1,191 @@
-#passwords{
+#passwords {
 	background: dodgerblue;
 	border: 2px solid black;
 	height: 200px;
-	color: white;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+}
+
+#section-nav {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	margin: 20px;
+	align-items: center;
+}
+
+#section-nav ul li{
+	list-style: none;
+	
+}
+#section-nav ul{
+	background:  #c4bfba;
+	
+}
+
+
+
+
+#section-nav ul li a{
+	text-decoration: none;
+	color: blue;
+}
+#section-nav ul li:last-child a{
+	text-decoration: none;
+	color: red;
+}
+
+#users > div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 30px;
+	font-size: 40px;
+	flex-wrap: wrap	;
+}
+#users > div p{
+	text-decoration: underline;
+	margin-right: 10px;
+}
+
+
+#users{
+	margin-top: 20px;
+}
+
+
+
+#section-nav ul {
+	width: 50%;
+	border-radius: 6px;
+	border: 3px solid black;
+	padding: 10px;
+}
+
+
+.razdel {
+	width: 100%;
+	height: 2px;
+	margin: 10px 0px 10px 0px;
+	background: black;
+}
+
+.profile{
+	width: 130px;
+	height: 130px;
+	background: white;
+	position: fixed;
+	top: 0px;
+	right: 0px;
+}
+
+.block-set-img img{
+	width: 70px;
+	border-radius: 50%;
+	border: 2px solid black;
+}
+
+.block-set-img{
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+
+.block-set-img i{
+	margin-left: -12px;
+	position: absolute;
+	bottom: 0;
+	right: -5px;
+	background: dodgerblue;
+	border-radius: 50%;
+	color: white;
+}
+.into{
+	color: black;
+	text-align: center;
+}
+
+.profile{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.block-pop-avatar{
+	height: 360px;
+	width: 130px;
+	background: white;
+	position: fixed;
+	top: 130px;
+	right: 0%;
+	border-top: 2px solid black;
+	transition: 1.5s;
+	display: none;
+	opacity: 0;
+	transform: scale(0);
+}
+
+.pop-avatar{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 5px;
+	padding: 5px;
+	height: 100%;
+	width: 100%;
+}
+
+.block-pop-avatar .pop-avatar img{
+	width: 80px;
+}
+
+@media screen and (max-width:500px){
+	.profile{
+		width: 90px;
+		height: 90px;
+	}
+	.block-pop-avatar{
+		width: 90px;
+		top: 90px;
+		height: 320px;
+	}
+	.block-pop-avatar .pop-avatar img{
+		width: 70px;
+	}
+}
+@media screen and (max-width:420px){
+	.profile{
+		width: 70px;
+		height: 70px;
+	}
+
+	.block-set-img img{
+		width: 50px;
+	}
+	#users div{
+		font-size: 20px;
+	}
+	.admin-block{
+		margin-top: 60px;
+	}
+	.block-pop-avatar{
+		width: 70px;
+		top: 70px;
+		height: 290px;
+	}
+	.block-pop-avatar .pop-avatar img{
+		width: 60px;
+	}
+}
+
+
+.pop-avatar i{
+	font-size: 20px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
 }

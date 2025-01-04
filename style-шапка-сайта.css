@@ -22,7 +22,7 @@
 	width: 26px;
 	height: 26px;
 	cursor: pointer;
-  z-index: 1001;
+	z-index: 1001;
 }
 .menu__btn > span,
 .menu__btn > span::before,
@@ -31,8 +31,8 @@
 	position: absolute;
 	width: 100%;
 	height: 2px;
-	background-color: goldenrod;
-	transition-duration: 0.25s;
+	background-color: #000000;
+	transition-duration: 0.1s;
 }
 .menu__btn > span::before {
 	content: '';
@@ -52,16 +52,11 @@
 	margin: 0;
 	padding: 80px 0;
 	list-style: none;
-  background-color: #3c5e2c;
+	background-color: #588157;
 	box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
 	transition-duration: 0.25s;
 }
 
-@media screen and (max-width: 300px) {
-	.menu__box {
-		left: calc(-100% - 100px);
-	}
-}
 
 .menu__item {
 	display: block;
@@ -80,19 +75,19 @@
 	height: 50px;
 	cursor: pointer;
 	transition: 0.5s ease;
-  margin-left: 20px;
+	margin-left: 20px;
 }
 
 .menu__box li .block-in-li:hover {
-  background-color: #cfd8dc;
+	background-color: #cfd8dc;
 }
 
 .menu__box li .block-in-li {
 	padding: 2px;
-  width: 100%;
+	width: 100%;
 	transition: 0.5s linear;
-  display: flex;
-  align-items: center;
+	display: flex;
+	align-items: center;
 }
 
 .menu__box li:last-child {
@@ -103,7 +98,7 @@
 .hamburger-menu {
 	position: fixed;
 	top: 0;
-  z-index: 1001;
+	z-index: 1001;
 }
 
 .active {
@@ -111,7 +106,6 @@
 	color: gold;
 }
 
-
-.admin{
+.admin {
 	display: none;
 }

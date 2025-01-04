@@ -8,26 +8,26 @@ const admin = document.querySelector('.im')
 function blockD() {
 	let delay_popup = document.getElementById('overlay')
 	delay_popup.style.display = 'block'
-
-	admin.style.display = 'none'
 }
 
 let adminSTR = document.querySelector('.admin')
 
-function hello() {
-	let login = document.getElementById('Login').value
-	let password = document.getElementById('password').value
+let login = document.getElementById('Login')
 
-	if (login == 'Admin' && password == '2012') {
+function hello() {
+	let password = document.getElementById('password')
+
+	if (password.value == '2012') {
 		blockN()
-		alert('Привет! Admin')
+		alert('Привет! ' + login.value)
 		const admin = document.querySelector('.im')
 		admin.style.display = 'none'
 		adminSTR.style.display = 'block'
 		saveStyle()
+		saveNick()
 	} else {
 		blockD()
-		alert('Incorrect login or password!!!!!')
+		alert('Incorrect Password !!!!!')
 	}
 }
 
@@ -44,22 +44,6 @@ function saveStyle() {
 	localStorage.setItem('adminDisplay', style2.display)
 }
 
-// Функция для применения стиля из LocalStorage
-function applyStyle() {
-	// Получаем сохраненные стили из LocalStorage
-	const displayCXX = localStorage.getItem('admin')
-
-	const displayCXX2 = localStorage.getItem('adminDisplay')
-
-	// Применяем сохраненные стили к элементу, если они существуют
-	adminSTR.style.display = displayCXX
-	admin.style.display = displayCXX2
-}
-
-// Вызов функций при загрузке страницы
-window.onload = function () {
-	applyStyle() // Применяем стиль
-}
 
 ///Конец
 
@@ -97,39 +81,52 @@ let preloader = document.querySelector('.preloader')
 
 window.addEventListener(
 	'load',
-	function () {
+	function() {
 		preloader.classList.add('hide')
-		this.setTimeout(function () {
+		this.setTimeout(function() {
 			preloader.remove()
 		})
 	},
 	1000
 )
 
-function yes() {
-	if (al == true) {
-		window.location.href = 'index.html'
-		adminSTR.style.display = 'none'
-		admin.style.display = 'block'
-		removeStyles()
-	} else {
-		window.location.href = 'admin.html'
-	}
+///Конец
+
+
+
+function saveNick() {
+
+	const nick_name = login.value
+
+
+	localStorage.setItem('name', nick_name)
 }
 
-///Конец
+
+function applyStyle() {
+	// Получаем сохраненные стили из LocalStorage
+	const displayCXX = localStorage.getItem('admin')
+
+	const displayCXX2 = localStorage.getItem('adminDisplay')
+
+	// Применяем сохраненные стили к элементу, если они существуют
+	adminSTR.style.display = displayCXX
+	admin.style.display = displayCXX2
+}	
+
+
+
+	applyStyle()
+
 
 
 function removeStyles() {
 	localStorage.removeItem('admin')
 	localStorage.removeItem('adminDisplay')
+	localStorage.removeItem('img')
+	let setThisImg = document.querySelector('.block-set-img img')
+		src =
+		'img/profile/1614442388_preview_color-squares-1556645350C4D.jpg'
+		localStorage.setItem('img', src)
+		
 }
-
-let leave = document.querySelector('.block-l')
-
-let al
-
-leave.addEventListener('click', () => {
-	al = confirm('Вы точно хотите выйти из аккаунта?')
-	setTimeout(yes(), 1000)
-})

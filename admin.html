@@ -40,31 +40,59 @@
 				</li>
 			</ul>
 		</div>
-		
+			<div class="profile">
+				<div class="block-set-img">
+					<img src="img/profile/1614442388_preview_color-squares-1556645350C4D.jpg" alt="">
+					<i class='bx bx-plus-circle'></i>
+				</div>
+				<p class="into">User</p>
+			</div>
+			<div class="block-pop-avatar">
 
-		
+				<div class="pop-avatar">
+					<img src="img/profile/18b26db5ae0e03533722d54a0b37733e.jpg" alt="" class='imgsrc1'>
+					<img src="img/profile/i.webp" alt="" class='imgsrc2'>
+					<img src="img/profile/img3.akspic.ru-uzor_kvadrat-uzor-korichnevyj_cvet-post_eto_k_svedeniyu-pryamougolnik-2732x2732.jpg" alt="" class='imgsrc3'>
+					<img src="img/profile/1614442388_preview_color-squares-1556645350C4D.jpg" alt="" class='imgsrc4'>
+					<i class='bx bxs-upvote'></i>
+				</div>
+			</div>
 
-		<div class="profile">
-			<div class="block-set-img"></div>
-		</div>
 		<div class="admin-block">
 			<h1>
 				Админ-панель
 			</h1>
 		</div>
-		<div class="block-leave">
-			<div class="block-l">Выйти з аккаунта админа</div>
-		</div>
+		<section id="section-nav">
+			<h2>Навигация</h2>
+			<ul>
+				<li><a href="#passwords">Пароли</a></li>
+				<li class="razdel"></li>
+				<li><a href="#leave">Выйти</a></li>
+			</ul>
+		</section>
 		
-
+		
 		<section id="passwords">
 			<h1>Пароли</h1>
 			<div class="doc-pass">
 				<p>Пароль от всего : 2012</p>
 			</div>
 		</section>
+		<section id="users">
+			<div class="block-user">
+				<p>Более 100</p><i class='bx bxs-user'></i>
+			</div>
+			
+		</section>
 
+		<section id="leave">
+			<div class="block-leave">
+				<div class="block-l">Выйти з аккаунта админа</div>
+			</div>
+		</section>
 
+		
 		<div id="overlay">
         
 			<div class="popup">
@@ -73,21 +101,21 @@
 									<i class='bx bx-x-circle' onclick="blockN()"></i>
 							</div>
 							<form action="">
-									<h1>Войти</h1>
+								<h1>Войти</h1>
 									
-									<div class="log-box">
-											<input type="text" placeholder="Имя" required id="Login">
-									</div>
-									<div class="input-box">
-											<input type="password" placeholder="Пароль" required id="password">
-											<i class='bx bxs-lock-alt'></i>
-									</div>
-									<div class="remember">
-											<a href="">Зыбыл пароль?</a>
-									</div>
-									<div>
-											<h2 class="btn" onclick="hello()">Login<h2></h2>
-									</div>      
+								<div class="log-box">
+										<input type="text" placeholder="Имя" required id="Login">
+								</div>
+								<div class="input-box">
+										<input type="password" placeholder="Пароль" required id="password">
+										<i class='bx bxs-lock-alt'></i>
+								</div>
+								<div class="remember">
+										<a href="">Зыбыл пароль?</a>
+								</div>
+								<div>
+										<h2 class="btn" onclick="hello()">Login<h2></h2>
+								</div>      
 									
 
 							</form>
@@ -139,10 +167,9 @@
 				</div>
 			</div>
 		</div>
-
-		<script>
-
-		</script>
+		<script src="script-change.js"></script>
 		<script src="script.js"></script>
+		<script src="script-local-storage.js"></script>
 	</body>
 </html>
+	
