@@ -11,9 +11,11 @@
 	display: flex;
 	width: 100%;
 	justify-content: center;
+	align-items: center;
 	color: gray;
 	font-size: 20px;
 	flex-wrap: wrap;
+	flex-direction: column;
 }
 .text-start-mini {
 	display: flex;
@@ -29,7 +31,6 @@
 .block-text {
 	display: flex;
 	width: 50%;
-	height: 100px;
 	background-color: lightgoldenrodyellow;
 	border: 2px solid green;
 	border-radius: 10px;
@@ -37,34 +38,13 @@
 	align-items: center;
 	margin-bottom: 10px;
 	flex-wrap: wrap;
-	background-size: 300% 300%;
-	background-image: linear-gradient(
-		-45deg,
-		yellow 0%,
-		purple 25%,
-		green 51%,
-		gold 100%
-	);
-	-webkit-animation: AnimateBG 20s ease infinite;
-	animation: AnimateBG 20s ease infinite;
-	transition: 1s;
+	padding: 20px;
 }
 
 .block-text:hover {
-	color: beige;
+	color: black;
 }
 
-@-webkit-keyframes AnimateBG {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
 
 @keyframes AnimateBG {
 	0% {
@@ -95,12 +75,13 @@
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
+	align-items: center;
+	flex-direction: column;
 	justify-content: center;
 }
 .block-text2 {
 	display: flex;
 	width: 50%;
-	height: 200px;
 	font-size: 20px;
 	color: gray;
 	background-color: lightgoldenrodyellow;
@@ -110,16 +91,7 @@
 	align-items: center;
 	margin-bottom: 10px;
 	flex-wrap: wrap;
-	background-size: 300% 300%;
-	background-image: linear-gradient(
-		-45deg,
-		yellow 0%,
-		orange 25%,
-		white 51%,
-		green 100%
-	);
-	-webkit-animation: AnimateBG 20s ease infinite;
-	animation: AnimateBG 20s ease infinite;
+	padding: 20px;
 	transition: 1s;
 }
 
