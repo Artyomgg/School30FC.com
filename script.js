@@ -3,6 +3,8 @@ function blockN() {
 	delay_popup.style.display = 'none'
 }
 
+const passValue = '220007'
+
 const admin = document.querySelector('.im')
 
 function blockD() {
@@ -17,7 +19,7 @@ let login = document.getElementById('Login')
 function hello() {
 	let password = document.getElementById('password')
 
-	if (password.value == '2012') {
+	if (password.value == passValue) {
 		blockN()
 		alert('Привет! ' + login.value)
 		const admin = document.querySelector('.im')
@@ -123,10 +125,4 @@ function applyStyle() {
 function removeStyles() {
 	localStorage.removeItem('admin')
 	localStorage.removeItem('adminDisplay')
-	localStorage.removeItem('img')
-	let setThisImg = document.querySelector('.block-set-img img')
-		src =
-		'img/profile/1614442388_preview_color-squares-1556645350C4D.jpg'
-		localStorage.setItem('img', src)
-		
 }
